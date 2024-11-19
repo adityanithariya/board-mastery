@@ -3,11 +3,11 @@ import hero from "@assets/hero.svg";
 import Image from "next/image";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { MdOutlineStarPurple500 } from "react-icons/md";
-import Button from "@components/ui/button";
+import PrimaryButton from "@components/ui/primary-btn";
 
 const HeroSection = () => {
 	return (
-		<div className="bg-primary py-20 flex justify-between px-5 md:px-20 flex-col-reverse md:flex-row">
+		<div className="bg-primary pt-5 pb-10 md:py-20 flex justify-between px-5 md:px-20 flex-col-reverse md:flex-row">
 			<div>
 				<div className="text-4xl md:text-5xl font-semibold flex flex-col gap-2 md:gap-5 pt-5">
 					<span className="text-gray">Complete Guide for</span>
@@ -47,7 +47,9 @@ const HeroSection = () => {
 							</span>
 						</div>
 					</div>
-					<Button className="w-full md:w-[19rem]">Purchase Now</Button>
+					<PrimaryButton className="w-full md:w-[19rem]">
+						Purchase Now
+					</PrimaryButton>
 				</div>
 			</div>
 			<div className="border-[10px] border-white rounded-[2.5rem] md:rounded-[1.75rem] w-[90vw] md:w-[590px] md:h-[370px] flex items-center justify-center overflow-hidden">

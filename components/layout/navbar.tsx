@@ -4,14 +4,14 @@ import Image from "next/image";
 import React, { useState } from "react";
 import logo from "@assets/logo.svg";
 import { IoIosArrowDown } from "react-icons/io";
-import Button from "@components/button";
+import PrimaryButton from "@components/ui/primary-btn";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import clsx from "clsx";
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
 	return (
-		<nav className="bg-white px-5 md:pl-[7rem] md:pr-10 py-[1.15rem] flex justify-between items-center shadow relative w-[100vw] z-10 font-semibold text text-gray-light">
+		<nav className="bg-white px-5 md:pl-[7rem] md:pr-10 py-[1.15rem] flex justify-between items-center shadow relative w-full font-semibold text text-gray-light">
 			<div className="flex items-center gap-8">
 				<Image
 					src={logo}
@@ -45,7 +45,7 @@ const Navbar = () => {
 				)}
 			>
 				<div>Log in</div>
-				<Button>Purchase Now</Button>
+				<PrimaryButton>Purchase Now</PrimaryButton>
 			</div>
 			<button
 				type="button"
