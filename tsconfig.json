@@ -25,6 +25,7 @@
 				"./components/*",
 				"./components/providers/*",
 				"./components/layout/*",
+				"./components/pages/*",
 				"./components/ui/*"
 			],
 			"@lib/*": ["./lib/*"]

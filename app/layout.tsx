@@ -24,8 +24,11 @@ export default function RootLayout({
 				suppressHydrationWarning
 			>
 				<ToastProvider>
-					<Banner />
-					<Navbar />
+					<div className="fixed top-0 w-full">
+						<Banner />
+						<Navbar />
+					</div>
+					<div className="h-5 md:h-24 bg-primary" />
 					{children}
 				</ToastProvider>
 			</body>

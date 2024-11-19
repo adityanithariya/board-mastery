@@ -7,7 +7,7 @@ const Banner = () => {
 	const [visible, setVisible] = useState(true);
 	return (
 		visible && (
-			<div className="bg-gradient-to-r relative from-[#ab79f9] via-[#8F65F8] to-[#5c3fa4] font-normal text-white text-sm py-2.5 text-center">
+			<div className="bg-gradient-to-r relative w-[100vw] from-[#ab79f9] via-[#8F65F8] to-[#5c3fa4] font-normal text-white text-sm py-2.5 text-left pl-4 md:text-center z-30">
 				Earn free CE credit by
 				<span className="underline pl-1">answering practice questions</span>
 				<button
