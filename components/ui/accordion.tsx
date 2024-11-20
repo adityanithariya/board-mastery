@@ -23,13 +23,15 @@ const AccordionTrigger = React.forwardRef<
 		<AccordionPrimitive.Trigger
 			ref={ref}
 			className={cn(
-				"flex flex-1 items-center justify-start py-4 text-sm font-medium transition-all hover:underline text-left [&[data-state=open]_.plus]:hidden [&[data-state=open]_.minus]:block",
+				"flex flex-1 items-start justify-start py-4 text-sm font-medium transition-all hover:underline text-left [&[data-state=open]_.plus]:hidden [&[data-state=open]_.minus]:block",
 				className,
 			)}
 			{...props}
 		>
-			<LuPlusCircle className="size-5 mr-5 text-slate-400 plus block" />
-			<LuMinusCircle className="size-5 mr-5 text-slate-400 minus hidden" />
+			<div className="size-5 mr-5 mt-1">
+				<LuPlusCircle className="size-5 text-slate-400 plus block" />
+				<LuMinusCircle className="size-5 text-slate-400 minus hidden" />
+			</div>
 			{children}
 		</AccordionPrimitive.Trigger>
 	</AccordionPrimitive.Header>

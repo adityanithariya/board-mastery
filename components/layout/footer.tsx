@@ -12,9 +12,9 @@ import {
 
 const Footer = () => {
 	return (
-		<footer className="bg-[#f9f8fd] px-28 divide-y *:border-slate-200">
-			<div className="flex items-start justify-between py-16">
-				<div className="w-[320px] flex flex-col gap-4 items-start justify-center">
+		<footer className="bg-[#f9f8fd] px-4 md:px-28 divide-y *:border-slate-200">
+			<div className="flex items-start justify-between flex-col md:flex-row py-16 gap-10">
+				<div className="w-[320px] flex flex-col gap-4 items-center md:items-start justify-center">
 					<Image
 						src={logo}
 						priority
@@ -28,7 +28,7 @@ const Footer = () => {
 					</div>
 					<button
 						type="button"
-						className="px-5 py-2 rounded-lg border border-secondary text-secondary font-semibold"
+						className="w-full md:w-fit px-5 py-2 rounded-lg border border-secondary text-secondary font-semibold"
 					>
 						Become a Contributor
 					</button>
@@ -55,22 +55,22 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col gap-4">
+				<div className="flex flex-col gap-4 w-full md:w-fit">
 					<div className="text-gray-light/70 text-sm font-semibold">
 						Stay up to date
 					</div>
-					<div className="flex gap-4">
+					<div className="flex gap-4 flex-col md:flex-row">
 						<input
 							type="text"
-							className="rounded-lg px-3 py-2 border border-slate-400"
+							className="w-full md:w-fit rounded-lg px-3 py-2 border border-slate-400"
 							placeholder="Enter your email"
 						/>
-						<PrimaryButton>Subscribe</PrimaryButton>
+						<PrimaryButton className="w-full md:w-fit">Subscribe</PrimaryButton>
 					</div>
 				</div>
 			</div>
-			<div className="py-8 flex items-center justify-between text-gray-light/70 font-medium">
-				<div className="flex gap-7">
+			<div className="py-8 flex items-center justify-between gap-5 flex-col-reverse md:flex-row text-gray-light/70 font-medium">
+				<div className="flex gap-4 md:gap-7 flex-col-reverse md:flex-row items-center">
 					<div>© Board Mastery. All rights reserved.</div>
 					<div className="flex gap-4">
 						<div>Terms</div>
@@ -78,7 +78,7 @@ const Footer = () => {
 						<div>Cookies</div>
 					</div>
 				</div>
-				<div className="flex gap-6">
+				<div className="flex gap-4 md:gap-6">
 					<div>Follow us on:</div>
 					<FaTiktok className="size-6 text-gray-light/50" />
 					<FaYoutube className="size-6 text-gray-light/50" />

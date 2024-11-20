@@ -15,9 +15,9 @@ const FAQSection = () => {
 		else e.currentTarget.style.backgroundColor = "";
 	};
 	return (
-		<div className="py-32">
-			<div className="flex flex-col items-center justify-center text-gray">
-				<h2 className="text-4xl font-semibold pb-5">
+		<div className="py-16 md:py-32">
+			<div className="flex flex-col items-center justify-center text-center text-gray">
+				<h2 className="text-3xl md:text-4xl font-semibold pb-5">
 					Frequently <span className="text-gradient">asked questions</span>
 				</h2>
 				<div className="text-xl">
@@ -33,10 +33,10 @@ const FAQSection = () => {
 					onClick={handleClick}
 				>
 					<AccordionItem value="item-1">
-						<AccordionTrigger className="w-[60vw] text-lg text-gray">
+						<AccordionTrigger className="md:w-[60vw] text-lg text-gray">
 							What does the ACHPN® preparation course include?
 						</AccordionTrigger>
-						<AccordionContent className="w-[60vw] text-base pl-10">
+						<AccordionContent className="md:w-[60vw] text-base pl-10">
 							The course provides a complete preparation package with over 1,300
 							practice questions designed to mirror the ACHPN® exam, supported
 							by detailed explanations. It also includes video lectures covering
@@ -52,10 +52,10 @@ const FAQSection = () => {
 					onClick={handleClick}
 				>
 					<AccordionItem value="item-1">
-						<AccordionTrigger className="w-[60vw] text-lg text-gray">
+						<AccordionTrigger className="md:w-[60vw] text-lg text-gray">
 							How long do I have access to the course and question bank?
 						</AccordionTrigger>
-						<AccordionContent className="w-[60vw] text-base pl-10">
+						<AccordionContent className="md:w-[60vw] text-base pl-10">
 							Yes, you can try us for free 30 days. If you want, we'll provide
 							you with a free, personalized 30-minute onboarding call to get you
 							up and running as soon as possible.
@@ -69,10 +69,10 @@ const FAQSection = () => {
 					onClick={handleClick}
 				>
 					<AccordionItem value="item-1">
-						<AccordionTrigger className="w-[60vw] text-lg text-gray">
+						<AccordionTrigger className="md:w-[60vw] text-lg text-gray">
 							Can I earn EC hours through this course?
 						</AccordionTrigger>
-						<AccordionContent className="w-[60vw] text-base pl-10">
+						<AccordionContent className="md:w-[60vw] text-base pl-10">
 							Yes, you can try us for free 30 days. If you want, we'll provide
 							you with a free, personalized 30-minute onboarding call to get you
 							up and running as soon as possible.
