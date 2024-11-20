@@ -13,3 +13,13 @@
 input {
 	outline: none;
 }
+
+.Typewriter__cursor {
+	background-color: linear-gradient(45deg, #a071f9, #573c9d);
+	background-clip: text;
+	color: transparent;
+}
+
+.Typewriter__cursor {
+	color: #a071f9;
+}

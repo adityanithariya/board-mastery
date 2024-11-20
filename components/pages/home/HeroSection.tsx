@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import PrimaryButton from "@components/ui/primary-btn";
+import TypeWriter from "@components/ui/typewriter";
 
 const HeroSection = () => {
 	return (
@@ -11,10 +12,10 @@ const HeroSection = () => {
 			<div>
 				<div className="text-4xl md:text-5xl font-semibold flex flex-col gap-2 md:gap-5 pt-5">
 					<span className="text-gray">Complete Guide for</span>
-					<span className="text-gradient relative w-fit">
-						ACHPN Exam Success
-						<span className="h-10 w-1 bg-[#B17EFA] absolute top-1/2 -translate-y-1/2 -right-1 animate-pulse" />
+					<span className="text-gradient">
+						<TypeWriter />
 					</span>
+					{/* <span className="h-10 w-1 bg-[#B17EFA] absolute top-1/2 -translate-y-1/2 -right-1 animate-pulse" /> */}
 				</div>
 				<div className="flex flex-col text-gray-light pt-7 gap-5">
 					<div className="flex gap-3 items-start md:items-center">
