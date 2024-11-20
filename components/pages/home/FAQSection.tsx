@@ -16,9 +16,9 @@ const FAQSection = () => {
 	};
 	return (
 		<div className="py-16 md:py-32">
-			<div className="flex flex-col items-center justify-center text-center text-gray">
+			<div className="px-3 flex flex-col items-center justify-center text-center text-gray">
 				<h2 className="text-3xl md:text-4xl font-semibold pb-5">
-					Frequently <span className="text-gradient">asked questions</span>
+					Frequently <br className="md:hidden" /><span className="text-gradient">asked questions</span>
 				</h2>
 				<div className="text-xl">
 					Your questions answered—all need to know preparing for the ACHPN®

@@ -11,7 +11,10 @@ const HeroSection = () => {
 			<div>
 				<div className="text-4xl md:text-5xl font-semibold flex flex-col gap-2 md:gap-5 pt-5">
 					<span className="text-gray">Complete Guide for</span>
-					<span className="text-gradient">ACHPN Exam Success</span>
+					<span className="text-gradient relative w-fit">
+						ACHPN Exam Success
+						<span className="h-10 w-1 bg-[#B17EFA] absolute top-1/2 -translate-y-1/2 -right-1 animate-pulse" />
+					</span>
 				</div>
 				<div className="flex flex-col text-gray-light pt-7 gap-5">
 					<div className="flex gap-3 items-start md:items-center">

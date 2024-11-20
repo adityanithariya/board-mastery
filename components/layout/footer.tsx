@@ -13,8 +13,8 @@ import {
 const Footer = () => {
 	return (
 		<footer className="bg-[#f9f8fd] px-4 md:px-28 divide-y *:border-slate-200">
-			<div className="flex items-start justify-between flex-col md:flex-row py-16 gap-10">
-				<div className="w-[320px] flex flex-col gap-4 items-center md:items-start justify-center">
+			<div className="flex items-center md:items-start justify-between flex-col md:flex-row py-16 gap-10">
+				<div className="w-full md:w-[320px] flex flex-col gap-4 items-center md:items-start justify-center">
 					<Image
 						src={logo}
 						priority
