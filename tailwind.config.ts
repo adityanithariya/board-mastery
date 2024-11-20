@@ -1,21 +1,44 @@
 import type { Config } from "tailwindcss";
 
 export default {
-	content: [
+    darkMode: ["class"],
+    content: [
 		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./components/**/*.{js,ts,jsx,tsx,mdx}",
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		extend: {
-			colors: {
-				primary: "#fff6f6",
-				"primary-bright": "#feeff8",
-				secondary: "#7b56d7",
-				"gray-light": "#475467",
-				gray: "#252d38",
-			},
-		},
-	},
+    	extend: {
+    		colors: {
+    			primary: '#fff6f6',
+    			'primary-bright': '#feeff8',
+    			secondary: '#7b56d7',
+    			'gray-light': '#475467',
+    			gray: '#252d38'
+    		},
+    		keyframes: {
+    			'accordion-down': {
+    				from: {
+    					height: '0'
+    				},
+    				to: {
+    					height: 'var(--radix-accordion-content-height)'
+    				}
+    			},
+    			'accordion-up': {
+    				from: {
+    					height: 'var(--radix-accordion-content-height)'
+    				},
+    				to: {
+    					height: '0'
+    				}
+    			}
+    		},
+    		animation: {
+    			'accordion-down': 'accordion-down 0.2s ease-out',
+    			'accordion-up': 'accordion-up 0.2s ease-out'
+    		}
+    	}
+    },
 	plugins: [],
 } satisfies Config;

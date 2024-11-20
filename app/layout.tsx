@@ -3,6 +3,7 @@ import "./globals.css";
 import { Lexend_Deca } from "next/font/google";
 import Navbar from "@components/layout/navbar";
 import Banner from "@components/layout/banner";
+import Footer from "@components/layout/footer";
 
 export const metadata: Metadata = {
 	title: "Board Mastery",
@@ -29,6 +30,7 @@ export default function RootLayout({
 					<Navbar />
 				</div>
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

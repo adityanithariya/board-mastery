@@ -3,66 +3,10 @@
 import PrimaryButton from "@components/ui/primary-btn";
 import clsx from "clsx";
 import React, { useState } from "react";
-import {
-	Select,
-	SelectContent,
-	SelectItem,
-	SelectTrigger,
-	SelectValue,
-} from "@components/ui/select";
-import Image from "next/image";
-import NCHN from "@assets/qtn-bank/nchn.svg";
-import ACLS from "@assets/qtn-bank/acls.svg";
-import ANCCFNP from "@assets/qtn-bank/ancc-fnp.svg";
-import CCRN from "@assets/qtn-bank/ccrn.svg";
-import CPN from "@assets/qtn-bank/cpn.svg";
-import CEN from "@assets/qtn-bank/cen.svg";
-import NCLEXPN from "@assets/qtn-bank/nclex-pn.svg";
+import SelectExam from "@components/SelectExam";
 
 const FindQtnBank = () => {
 	const [type, setType] = useState<"nuring" | "practitioner">("nuring");
-	const qtnBank = [
-		{
-			title: "NCHN",
-			img: NCHN,
-			alt: "nchn",
-		},
-		{
-			title: "ACLS",
-			img: ACLS,
-			alt: "acls",
-		},
-		{
-			title: "ANCC FNP",
-			img: ANCCFNP,
-			alt: "ancc-fnp",
-		},
-		{
-			title: "CCRN",
-			img: CCRN,
-			alt: "ccrn",
-		},
-		{
-			title: "CPN",
-			img: CPN,
-			alt: "cpn",
-		},
-		{
-			title: "CEN",
-			img: CEN,
-			alt: "cen",
-		},
-		{
-			title: "NCLEX-PN",
-			img: NCLEXPN,
-			alt: "nclex-pn",
-		},
-		{
-			title: "PALS",
-			img: ACLS,
-			alt: "pals",
-		},
-	];
 	return (
 		<div className="py-10 md:px-16 bg-gradient-to-b from-primary to-[#fefeff] pointer-events-auto">
 			<div className="w-full md:rounded-3xl bg-primary-bright md:shadow px-5 md:px-0 py-12 flex flex-col items-center gap-8 ">
@@ -94,26 +38,7 @@ const FindQtnBank = () => {
 							)}
 						/>
 					</div>
-					<Select defaultValue="nchn">
-						<SelectTrigger className="w-[90vw] md:w-[360px] h-14 font-semibold text-gray bg-white *:!flex *:gap-2">
-							<SelectValue placeholder="Theme" />
-						</SelectTrigger>
-						<SelectContent>
-							{qtnBank.map((item) => (
-								<SelectItem value={item.alt} key={item.title}>
-									<div className="flex gap-2">
-										<Image
-											src={item.img}
-											width={24}
-											height={24}
-											alt={item.alt}
-										/>
-										{item.title}
-									</div>
-								</SelectItem>
-							))}
-						</SelectContent>
-					</Select>
+					<SelectExam />
 					<PrimaryButton className="!px-20">Search</PrimaryButton>
 				</div>
 			</div>

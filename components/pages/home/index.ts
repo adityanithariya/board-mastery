@@ -4,3 +4,7 @@ export { default as TeamSection } from "./TeamSection";
 export { default as ContentCreation } from "./ContentCreation";
 export { default as FeatureSection } from "./FeatureSection";
 export { default as StatSection } from "./StatSection";
+export { default as FAQSection } from "./FAQSection";
+export { default as Testimonials } from "./Testimonials";
+export { default as TrialSection } from "./TrialSection";
+export { default as PlanSection } from "./PlanSection";

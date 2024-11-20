@@ -5,3 +5,11 @@
 .text-gradient {
 	@apply bg-gradient-to-br from-[#a071f9] via-secondary to-[#573c9d] bg-clip-text text-transparent;
 }
+
+.bg-gradient {
+	@apply bg-gradient-to-br from-[#a071f9] via-secondary to-[#573c9d];
+}
+
+input {
+	outline: none;
+}
