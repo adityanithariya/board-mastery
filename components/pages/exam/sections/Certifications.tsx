@@ -3,7 +3,7 @@ import Header, { Pointer } from "@components/exam/header";
 
 const Certifications = () => {
 	return (
-		<section id="related-certification">
+		<section id="related-certifications">
 			<Header>Related Certifications</Header>
 			<div>
 				The Hospice and Palliative Credentialing Center (HPCC) offers a range of
