@@ -8,7 +8,7 @@ import SelectExam from "@components/SelectExam";
 const FindQtnBank = () => {
 	const [type, setType] = useState<"nuring" | "practitioner">("nuring");
 	return (
-		<div className="py-10 md:px-16 bg-gradient-to-b from-primary to-[#fefeff] pointer-events-auto">
+		<section className="py-10 md:px-16 bg-gradient-to-b from-primary to-[#fefeff] pointer-events-auto">
 			<div className="w-full md:rounded-3xl bg-primary-bright md:shadow px-5 md:px-0 py-12 flex flex-col items-center gap-8 ">
 				<h2 className="text-gray font-semibold text-4xl w-full text-left md:text-center">
 					Find Your
@@ -42,7 +42,7 @@ const FindQtnBank = () => {
 					<PrimaryButton className="!px-20">Search</PrimaryButton>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

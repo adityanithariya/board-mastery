@@ -8,7 +8,7 @@ import TypeWriter from "@components/ui/typewriter";
 
 const HeroSection = () => {
 	return (
-		<div className="bg-primary pt-5 pb-10 md:py-20 flex justify-between px-5 md:px-20 flex-col-reverse md:flex-row">
+		<section className="bg-primary pt-5 pb-10 md:py-20 flex justify-between px-5 md:px-20 flex-col-reverse md:flex-row">
 			<div>
 				<div className="text-4xl md:text-5xl font-semibold flex flex-col gap-2 md:gap-5 pt-5">
 					<span className="text-gray">Complete Guide for</span>
@@ -65,7 +65,7 @@ const HeroSection = () => {
 					className="rounded-2xl w-[90vw]"
 				/>
 			</div>
-		</div>
+		</section>
 	);
 };
 

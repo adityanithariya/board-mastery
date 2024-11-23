@@ -24,7 +24,7 @@ const Pointer = ({
 
 const PlanSection = () => {
 	return (
-		<div className="py-10 md:py-20">
+		<section className="py-10 md:py-20">
 			<div className="px-3 flex flex-col items-center justify-center text-center mb-20">
 				<h2 className="text-3xl md:text-4xl font-semibold mb-5 md:mb-7">
 					Plans that <br className="md:hidden" />
@@ -99,7 +99,7 @@ const PlanSection = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

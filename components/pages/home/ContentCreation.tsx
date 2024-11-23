@@ -24,7 +24,7 @@ const ContentCreationStep: FC<{ step: number; title: string }> = ({
 
 const ContentCreation = () => {
 	return (
-		<div className="md:py-10 md:px-32 bg-gradient-to-b from-[#fbfafe] to-[#f9f8fd] pb-20 relative flex flex-col items-center justify-center *:z-10">
+		<section className="md:py-10 md:px-32 bg-gradient-to-b from-[#fbfafe] to-[#f9f8fd] pb-20 relative flex flex-col items-center justify-center *:z-10">
 			<div className="hidden md:block border-[3px] border-secondary/30 absolute h-36 top-[4.5rem] w-[80vw] rounded-2xl" />
 			<div className="md:px-7 bg-[#fbfafe]">
 				<h2 className="bg-white text-secondary text-2xl px-7 py-4 mb-8 rounded-3xl border-[2px] w-fit border-slate-100">
@@ -40,7 +40,7 @@ const ContentCreation = () => {
 				<IoArrowDown className="text-secondary/50 md:-rotate-90 size-8 mx-8 my-7 md:mb-0 md:mt-14" />
 				<ContentCreationStep step={4} title="CME or PubMed" />
 			</div>
-		</div>
+		</section>
 	);
 };
 

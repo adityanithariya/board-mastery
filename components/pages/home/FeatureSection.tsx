@@ -17,7 +17,7 @@ const Pointer: FC<{ children: ReactNode }> = ({ children }) => {
 
 const FeatureSection = () => {
 	return (
-		<div className="pt-16 md:pt-24 px-4 md:px-0 w-[100vw] md:w-full overflow-hidden">
+		<section className="pt-16 md:pt-24 px-4 md:px-0 w-[100vw] md:w-full overflow-hidden">
 			<div className="flex flex-col gap-5 items-center justify-center pb-14">
 				<h2 className="text-gray text-3xl md:text-4xl font-semibold">
 					Let us pave your
@@ -147,7 +147,7 @@ const FeatureSection = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

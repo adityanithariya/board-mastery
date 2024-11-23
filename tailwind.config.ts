@@ -14,7 +14,8 @@ export default {
     			'primary-bright': '#feeff8',
     			secondary: '#7b56d7',
     			'gray-light': '#475467',
-    			gray: '#252d38'
+    			gray: '#252d38',
+				anchor: "#007AFF"
     		},
     		keyframes: {
     			'accordion-down': {

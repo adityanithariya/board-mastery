@@ -23,3 +23,12 @@ input {
 .Typewriter__cursor {
 	color: #a071f9;
 }
+
+main *::-webkit-scrollbar {
+	width: 1px;
+	height: 0px;
+}
+
+a {
+	word-break: break-all;
+}
