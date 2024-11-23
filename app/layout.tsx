@@ -25,7 +25,7 @@ export default function RootLayout({
 				className={`${lexend_Deca.className} antialiased`}
 				suppressHydrationWarning
 			>
-				<div className="sticky top-0 w-[98.75dvw] z-[100]">
+				<div className="sticky top-0 w-[98.75dvw] z-[100]" id="header">
 					<Banner />
 					<Navbar />
 				</div>

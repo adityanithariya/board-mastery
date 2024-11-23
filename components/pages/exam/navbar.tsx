@@ -1,7 +1,7 @@
 "use client";
 
 import clsx from "clsx";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const ExamNavbar = ({
@@ -21,8 +21,22 @@ const ExamNavbar = ({
 			});
 		}
 	};
+	const navRef = useRef<HTMLDivElement>(null);
+	useEffect(() => {
+		if (!navRef.current) return;
+		const header = document.getElementById("header") as Element;
+		const resizeObserver = new ResizeObserver(() => {
+			if (!navRef.current) return;
+			navRef.current.style.top = `${header.clientHeight}px`;
+		});
+		resizeObserver.observe(header);
+		return () => resizeObserver.disconnect();
+	});
 	return (
-		<div className="scrollbar flex border-b border-slate-300 sticky top-[7.5rem] pt-1 bg-white z-10">
+		<div
+			ref={navRef}
+			className="flex border-b border-slate-300 sticky md:top-[7.5rem] pt-1 bg-white z-10"
+		>
 			<div className="size-5 mx-2 my-3">
 				<RxHamburgerMenu />
 			</div>
